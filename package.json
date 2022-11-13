@@ -1,6 +1,8 @@
 {
   "name": "weathercast",
-  "version": "0.0.0",
+  "author": "Steven Tan <steven@steventan.com.au>",
+  "version": "0.0.1",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
