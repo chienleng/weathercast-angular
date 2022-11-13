@@ -8,8 +8,8 @@ Besides the core Angular packages, the project also uses:
 
 - [Tailwind CSS](https://tailwindcss.com) for styling
 - [Mapbox](https://www.mapbox.com) for map display
-- [Date-fns](https://date-fns.org) for data stuff
-- [Montserrat font](https://fonts.google.com/specimen/Montserrat) for typography
+- [Date-fns](https://date-fns.org) for date parsing and formatting
+- [Montserrat font](https://fonts.google.com/specimen/Montserrat) for nice typography
 - [Unsplash](https://unsplash.com) for royalty free background images
 - [Weather icons](https://erikflowers.github.io/weather-icons/) for pretty weather icons
 
