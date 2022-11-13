@@ -15,7 +15,9 @@ Besides the core Angular packages, the project also uses:
 
 ## Installation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9. So useful to have the CLI installed.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
+
+Install the CLI first.
 
 ```
 npm install -g @angular/cli
