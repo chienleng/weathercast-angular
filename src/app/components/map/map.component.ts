@@ -3,6 +3,7 @@ import { Subscription } from 'rxjs';
 import * as mapboxgl from 'mapbox-gl';
 import { environment } from 'src/environments/environment';
 import { LocationService } from 'src/app/services/location.service';
+import { Coordinates } from 'src/app/interfaces/Coordinates';
 
 @Component({
   selector: 'app-map',
@@ -24,22 +25,30 @@ export class MapComponent implements OnInit {
 
   ngOnInit(): void {
     this.subscription = this.locationService.getCoords().subscribe((coords) => {
-      if (!this.map) {
-        this.map = new mapboxgl.Map({
-          container: 'map',
-          style: this.style,
-          zoom: 9,
-          center: [coords.longitude, coords.latitude],
-        });
-
-        this.marker
-          .setLngLat([coords.longitude, coords.latitude])
-          .addTo(this.map);
+      if (this.map) {
+        this.update(coords);
       } else {
-        this.map.setCenter([coords.longitude, coords.latitude]);
-        this.map.setZoom(9);
-        this.marker.setLngLat([coords.longitude, coords.latitude]);
+        this.setup(coords);
       }
     });
+  }
+
+  setup(coords: Coordinates) {
+    this.map = new mapboxgl.Map({
+      container: 'map',
+      style: this.style,
+      zoom: 9,
+      center: [coords.longitude, coords.latitude],
+    });
+
+    this.marker.setLngLat([coords.longitude, coords.latitude]).addTo(this.map);
+  }
+
+  update(coords: Coordinates) {
+    if (this.map) {
+      this.map.setCenter([coords.longitude, coords.latitude]);
+      this.map.setZoom(9);
+      this.marker.setLngLat([coords.longitude, coords.latitude]);
+    }
   }
 }
