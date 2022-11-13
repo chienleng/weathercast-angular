@@ -1,0 +1,23 @@
+main {
+  @apply z-10 relative px-2 lg:flex lg:px-0;
+}
+
+.current-details {
+  @apply lg:w-3/5 p-16 flex flex-col lg:h-screen lg:justify-between;
+}
+
+.aside {
+  @apply lg:w-2/5 p-3 text-white lg:h-screen lg:overflow-y-auto;
+}
+
+h1 {
+  @apply font-extrabold text-lg text-center mb-6 lg:mb-0 lg:text-left lg:text-2xl text-white inline-block;
+}
+
+h1 button {
+  @apply px-2 py-1 rounded-md hover:bg-slate-800;
+}
+
+.card {
+  @apply backdrop-blur-sm bg-black/50 rounded-xl;
+}

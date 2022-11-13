@@ -1,0 +1,28 @@
+h4 {
+  @apply uppercase text-sm text-slate-400;
+}
+
+ul {
+  @apply mt-1 flex flex-col border-t border-b border-slate-800 divide-y divide-slate-800;
+}
+
+li {
+  @apply flex items-center gap-2 py-3 justify-start;
+}
+
+.day {
+  @apply w-1/4 text-lg;
+}
+
+.weather {
+  @apply w-1/4 text-slate-400;
+  font-size: 30px;
+}
+
+.min-max {
+  @apply w-2/4 flex justify-between font-mono text-lg;
+}
+
+.min-max em {
+  @apply text-xs font-extralight uppercase text-slate-400 not-italic;
+}

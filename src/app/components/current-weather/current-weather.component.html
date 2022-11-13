@@ -1,0 +1,30 @@
+<section>
+  <div>
+    <div class="location">
+      <span>lat: {{ coords.latitude.toFixed(3) }}</span>
+      <span>lng: {{ coords.longitude.toFixed(3) }}</span>
+    </div>
+    <div class="current">
+      <span class="value">{{ current }} </span>
+      <sup class="unit">{{ unit }}</sup>
+    </div>
+  </div>
+
+  <div class="description">
+    <div class="icon"><i class="wi" [ngClass]="weatherIcon"></i></div>
+    <div>{{ weatherDescription }}</div>
+  </div>
+
+  <div>
+    <div class="min-max">
+      <div>
+        <em>min:</em>
+        <span class="value">{{ min }}&deg; </span>
+      </div>
+      <div>
+        <em>max:</em>
+        <span class="value">{{ max }}&deg; </span>
+      </div>
+    </div>
+  </div>
+</section>

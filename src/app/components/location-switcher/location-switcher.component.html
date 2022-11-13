@@ -1,0 +1,15 @@
+<div class="location-switcher">
+  <button class="close-btn" (click)="onClose()">Close</button>
+  <div class="locations">
+    <button class="location-btn" (click)="onSelectCurrent()">
+      Your location
+    </button>
+    <button
+      class="location-btn"
+      (click)="onSelect(location)"
+      *ngFor="let location of locations"
+    >
+      {{ location.label }}
+    </button>
+  </div>
+</div>

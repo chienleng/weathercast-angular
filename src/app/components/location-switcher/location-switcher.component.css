@@ -1,0 +1,15 @@
+.location-switcher {
+  @apply flex justify-center fixed w-screen h-screen top-0 left-0 backdrop-blur-sm bg-slate-700/70 z-50 transition-all text-white;
+}
+
+.locations {
+  @apply my-10 px-10 flex flex-col gap-3;
+}
+
+.close-btn {
+  @apply absolute right-10 top-2 block text-sm px-3 py-2 rounded bg-slate-700 hover:bg-slate-500;
+}
+
+.location-btn {
+  @apply block px-2 py-1 rounded hover:bg-slate-500 text-center text-xl;
+}

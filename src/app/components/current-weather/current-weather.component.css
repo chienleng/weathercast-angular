@@ -1,0 +1,49 @@
+section {
+  @apply text-white text-center lg:flex gap-12 items-end justify-center lg:justify-start;
+}
+
+.value {
+  @apply font-bold;
+}
+.unit {
+  @apply relative -top-1;
+}
+
+.current {
+  @apply whitespace-nowrap;
+}
+.current .value {
+  @apply font-bold text-8xl;
+}
+
+.current .unit {
+  @apply text-4xl relative -top-11 -left-4;
+}
+
+.min-max {
+  @apply flex flex-col pb-5;
+}
+
+.min-max > div {
+  @apply flex justify-center lg:justify-between items-center;
+}
+
+.min-max em {
+  @apply text-xs font-extralight uppercase text-gray-300 not-italic mr-1;
+}
+
+.min-max .value {
+  @apply font-mono;
+}
+
+.description {
+  @apply flex items-center gap-2 pb-4 justify-center;
+}
+
+.description .icon {
+  font-size: 40px;
+}
+
+.location {
+  @apply flex gap-6 text-xs font-mono justify-center lg:justify-start;
+}

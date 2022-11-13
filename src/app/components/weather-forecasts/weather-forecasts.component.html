@@ -1,0 +1,22 @@
+<h4>7 Day Forecast</h4>
+
+<ul>
+  <li *ngFor="let forecast of forecasts">
+    <span class="day">{{ getDayOfWeek(forecast.time) }}</span>
+
+    <span class="weather" title="{{ forecast.weatherDescription }}">
+      <i class="wi" [ngClass]="forecast.weatherIcon"></i>
+    </span>
+
+    <div class="min-max">
+      <div>
+        <em>min:</em>
+        <span> {{ forecast.temperatureMin }}&deg; </span>
+      </div>
+      <div>
+        <em>max:</em>
+        <span> {{ forecast.temperatureMax }}&deg; </span>
+      </div>
+    </div>
+  </li>
+</ul>

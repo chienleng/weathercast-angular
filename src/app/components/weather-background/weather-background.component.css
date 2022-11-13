@@ -1,0 +1,3 @@
+img {
+  @apply fixed brightness-50 z-0 object-cover object-bottom w-full h-full;
+}
