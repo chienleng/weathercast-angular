@@ -1,6 +1,6 @@
 # Weathercast Angular
 
-Weathercast Angular is a small weather forecast application built in Angular as a proof of concept and as an Angular refresher for myself.
+Weathercast Angular is a small weather forecast application built in Angular.
 
 [View Demo](https://weathercast-angular.netlify.app)
 
