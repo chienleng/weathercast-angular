@@ -3,7 +3,7 @@
 }
 
 .locations {
-  @apply my-10 px-10 flex flex-col gap-3;
+  @apply my-12 px-10 flex flex-col gap-3 h-screen overflow-y-auto;
 }
 
 .close-btn {
