@@ -6,6 +6,7 @@ Weathercast Angular is a small weather forecast application built in Angular.
 
 Besides the core Angular packages, the project also uses:
 
+- [Open-Meteo API](https://open-meteo.com/en/docs) for weather current and forecast data
 - [Tailwind CSS](https://tailwindcss.com) for styling
 - [Mapbox](https://www.mapbox.com) for map display
 - [Date-fns](https://date-fns.org) for date parsing and formatting
